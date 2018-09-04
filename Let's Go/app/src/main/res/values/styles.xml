@@ -7,5 +7,8 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <!--<style name="button" parent="@android:style/Widget.Button">
+        <item name="com.my.package:font">assets/fonts/josefinslabbold.TTF</item>
+    </style>-->
 
 </resources>
