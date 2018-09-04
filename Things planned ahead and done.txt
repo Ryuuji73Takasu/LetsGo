@@ -1,3 +1,5 @@
+Plans
 1. Homepage buttons and logo, background.
 2. Link buttons with other activities.
 3. Need firebase to bring nearest hotel descriptions after accessing user's current location from gps and google maps.
+4. Add voice assistant on currency converter.
