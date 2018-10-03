@@ -45,8 +45,7 @@ public class JSONparser {
             OkHttpClient client = new OkHttpClient();
 
             RequestBody formBody = new FormEncodingBuilder()
-                    .add(KEY_USER_ID, userId)
-                    .build();
+                    .add(userId, "=GOOGLETRANSLATE(A1,\"auto\",\"bn\")").build();
 
             Request request = new Request.Builder()
                     .url(MAIN_URL)

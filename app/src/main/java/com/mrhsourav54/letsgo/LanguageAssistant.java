@@ -1,7 +1,10 @@
 package com.mrhsourav54.letsgo;
 
+import android.annotation.TargetApi;
 import android.content.Intent;
+import android.os.Build;
 import android.os.StrictMode;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -13,6 +16,7 @@ import android.widget.TextView;
 
 import com.mrhsourav54.letsgo.parser.JSONparser;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -24,10 +28,13 @@ public class LanguageAssistant extends AppCompatActivity {
     private String in;
     private JSONObject out;
     private Button cnv;
-    private String jsonin;
+   /* private String jsonin;
     private JSONObject j;
+    private JSONObject sout;*/
 
 
+    @TargetApi(Build.VERSION_CODES.KITKAT)
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,12 +49,13 @@ public class LanguageAssistant extends AppCompatActivity {
         cnv= findViewById(R.id.convbtn);
         in = etin.toString().trim();
 
-     /*   try {
+/*       try {
             jsonin = "{\"first\":\""+in+"\"}";
             JSONObject jsonObject = new JSONObject(jsonin );
             //getting specific key values
-            Log.d("first = ", jsonObject.getString(in));
-*/
+            Log.d("first = ", jsonObject.getString(in));*/
+
+
         /*}catch (Exception ex) {
             ex.printStackTrace();
         }
@@ -57,21 +65,36 @@ public class LanguageAssistant extends AppCompatActivity {
             e.printStackTrace();
         }
 
-*/
-        tvout.setText("");
-        cnv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                JSONparser.getDataById(in);
-                out = JSONparser.getDataFromWeb();
-                tvout.setText(out.toString());
 
-            }
-        });
+*/
+
+  //      tvout.setText("");
+
         JSONparser.getDataById(in);
+
         out = JSONparser.getDataFromWeb();
 
+
+        /*JSONArray arr = null;
+        try {
+            arr = new JSONArray(out);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        JSONObject jObj = null;
+        try {
+            jObj = arr.getJSONObject(0);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        try {
+            String date = jObj.getString("hello");
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }*/
+
         tvout.setText(out.toString());
+
 
        /* try {
             out = j.getJSONObject("first");
@@ -79,10 +102,6 @@ public class LanguageAssistant extends AppCompatActivity {
             e.printStackTrace();
         }
         */
-
-
-
-
 
 
         homepagebtn.setOnClickListener(new View.OnClickListener() {

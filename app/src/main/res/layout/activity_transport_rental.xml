@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".Transport.TransportRental">
+
+    <ImageButton
+
+        android:id="@+id/homeButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+
+        app:srcCompat="@drawable/log" />
+
+    <Button
+
+
+        android:id="@+id/car"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="132dp"
+        android:background="#aa9e44ff"
+        android:fontFamily="casual"
+        android:text="Car Rental"
+
+        android:textColor="@drawable/colorbutton"
+        android:textStyle="bold" />
+
+    <Button
+
+
+        android:id="@+id/plane"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="#aa44ff4d"
+        android:fontFamily="casual"
+
+        android:text="Plane fare"
+        android:textColor="@drawable/colorbutton"
+        android:textStyle="bold" />
+
+    <Button
+
+
+        android:id="@+id/train"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="130dp"
+        android:background="#aa4484FF"
+        android:fontFamily="casual"
+        android:text="Train Tickets"
+        android:textColor="@drawable/colorbutton"
+        android:textStyle="bold"
+
+        />
+
+
+</RelativeLayout>

@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import static java.lang.Math.round;
+
 
 public class Currency_conv extends AppCompatActivity {
 
@@ -71,26 +73,26 @@ public class Currency_conv extends AppCompatActivity {
                     txtViewResultsHere.setText("");
 
                     if (dollerTotaka.isChecked()) {
-                        ans = 83.82 * num;
+                        round(ans = 83.82 * num);
                         txtViewResultsHere.append(a + " Dollar = " + ans + " Taka\n");
                     }
                     if (takaToDOller.isChecked()) {
-                        ans = num/83.82;
+                        round(ans = num/83.82);
                         txtViewResultsHere.append(a + " Taka =" + ans + " Dollar\n");
                     }
                     if (euroToTaka.isChecked()) {
-                        ans = num*96.75;
+                        round(ans = num*96.75);
                         txtViewResultsHere.append(a + " Euro = " + ans + " Taka\n");
                     }
                     if (takaToEuro.isChecked()) {
-                        ans = num/96.75;
+                        round(ans = num/96.75);
                         txtViewResultsHere.append(a + " Taka = " + ans + " Euro\n");
                     }
                    
                 }
                 catch (Exception e)
                 {
-                    Toast.makeText(Currency_conv.this, "Please Enter a number at first", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Currency_conv.this, "Please Enter a valid number", Toast.LENGTH_SHORT).show();
                 }
             }
         });

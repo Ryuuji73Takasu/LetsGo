@@ -15,6 +15,8 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.mrhsourav54.letsgo.Transport.TransportRental;
+
 import java.util.Hashtable;
 
 
@@ -76,6 +78,13 @@ public class Homepage extends AppCompatActivity {
             public void onClick(View view) {
                 Intent ill = new Intent(Homepage.this,LanguageAssistant.class);
                 startActivity(ill);
+            }
+        });
+        carrentbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent il3l = new Intent(Homepage.this,TransportRental.class);
+                startActivity(il3l);
             }
         });
     }
