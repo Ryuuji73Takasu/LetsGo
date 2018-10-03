@@ -75,4 +75,3 @@ public class GiveCompanyData extends AppCompatActivity {
     }
 
 }
-

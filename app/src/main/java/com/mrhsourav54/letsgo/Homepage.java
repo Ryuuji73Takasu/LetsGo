@@ -1,6 +1,7 @@
 package com.mrhsourav54.letsgo;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
@@ -60,6 +61,21 @@ public class Homepage extends AppCompatActivity {
             @Override
             public void onClick(View arg0) {
                 Toast.makeText(Homepage.this,"Home button clicked.",Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        currconvbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent ii = new Intent(Homepage.this,Currency_conv.class);
+                startActivity(ii);
+            }
+        });
+        langassbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent ill = new Intent(Homepage.this,LanguageAssistant.class);
+                startActivity(ill);
             }
         });
     }

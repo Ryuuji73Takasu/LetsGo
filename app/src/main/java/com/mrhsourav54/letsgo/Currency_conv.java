@@ -68,36 +68,31 @@ public class Currency_conv extends AppCompatActivity {
                     String a = txtGiveInput.getText().toString();
                     double num = Double.parseDouble(a);
                     double ans;
-                    //tvinfo.setText("");
+                    txtViewResultsHere.setText("");
 
                     if (dollerTotaka.isChecked()) {
-                        ans = 80 * num;
-                        txtViewResultsHere.append(a + " Doller = " + ans + " Taka.\n");
+                        ans = 83.82 * num;
+                        txtViewResultsHere.append(a + " Dollar = " + ans + " Taka\n");
                     }
                     if (takaToDOller.isChecked()) {
-                        ans = num/80;
-                        txtViewResultsHere.append(a + " Taka =" + ans + " Doller.\n");
+                        ans = num/83.82;
+                        txtViewResultsHere.append(a + " Taka =" + ans + " Dollar\n");
                     }
                     if (euroToTaka.isChecked()) {
-                        ans = num*120;
-                        txtViewResultsHere.append(a + " Euro = " + ans + " Taka.\n");
+                        ans = num*96.75;
+                        txtViewResultsHere.append(a + " Euro = " + ans + " Taka\n");
                     }
                     if (takaToEuro.isChecked()) {
-                        ans = num/120;
-                        txtViewResultsHere.append(a + " Taka = " + ans + " Euro.\n");
+                        ans = num/96.75;
+                        txtViewResultsHere.append(a + " Taka = " + ans + " Euro\n");
                     }
                    
                 }
                 catch (Exception e)
                 {
                     Toast.makeText(Currency_conv.this, "Please Enter a number at first", Toast.LENGTH_SHORT).show();
-
                 }
-
             }
         });
-
-
-
     }
 }
