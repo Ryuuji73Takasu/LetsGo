@@ -1,4 +1,4 @@
-package com.mrhsourav54.letsgo;
+package com.mrhsourav54.letsgo.CurrencyConverter;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -15,6 +15,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.mrhsourav54.letsgo.R;
 
 public class LoginCompany extends AppCompatActivity {
 

@@ -1,12 +1,10 @@
-package com.mrhsourav54.letsgo.parser;
+package com.mrhsourav54.letsgo.Translator.parser;
 
 import android.support.annotation.NonNull;
 import android.util.Log;
 
-import com.squareup.okhttp.FormEncodingBuilder;
 import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
-import com.squareup.okhttp.RequestBody;
 import com.squareup.okhttp.Response;
 
 import org.json.JSONException;
@@ -39,9 +37,11 @@ public class JSONparser {
         return null;
     }
 
-    public static JSONObject getDataById(String userId) {
 
-        try {
+
+    public static void getDataById(String userId) {
+
+       /* try {
             OkHttpClient client = new OkHttpClient();
 
             RequestBody formBody = new FormEncodingBuilder()
@@ -58,7 +58,45 @@ public class JSONparser {
         } catch (IOException | JSONException e) {
             Log.e(TAG, "" + e.getLocalizedMessage());
         }
-        return null;
+        return null;*/
+
+
+       /* String reason = menuItem.getTitle().toString();
+        if (reason.equals("Copyright"))
+            reason = "CopyrightInfringement";
+        JsonObject json = new JsonObject();
+        json.addProperty("Reason", reason);
+
+        String url = mBaseUrl + "/" + id + "/report";
+
+        String jsonString = json.toString();
+        RequestBody body = RequestBody.create(JSON, jsonString);
+
+        Request request = new Request.Builder()
+                .header("X-Client-Type", "Android")
+                .url(url)
+                .post(body)
+                .build();
+
+        client.newCall(request).enqueue(new com.squareup.okhttp.Callback() {
+            @Override
+            public void onFailure(Request request, IOException throwable) {
+                throwable.printStackTrace();
+            }
+
+            @Override
+            public void onResponse(Response response) throws IOException {
+                if (!response.isSuccessful()) throw new IOException(
+                        "Unexpected code " + response);
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        Toast.makeText(context, "Report Received", Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
+        });*/
+
     }
 
 }

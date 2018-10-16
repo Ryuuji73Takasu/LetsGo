@@ -1,4 +1,4 @@
-package com.mrhsourav54.letsgo;
+package com.mrhsourav54.letsgo.CurrencyConverter;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,6 +10,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.mrhsourav54.letsgo.R;
 
 public class GiveCompanyData extends AppCompatActivity {
 

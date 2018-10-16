@@ -1,4 +1,4 @@
-package com.mrhsourav54.letsgo;
+package com.mrhsourav54.letsgo.CurrencyConverter;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +9,8 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.mrhsourav54.letsgo.R;
 
 import static java.lang.Math.round;
 

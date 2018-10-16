@@ -1,6 +1,5 @@
-package com.mrhsourav54.letsgo;
+package com.mrhsourav54.letsgo.CurrencyConverter;
 
-import android.nfc.Tag;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,6 +10,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.mrhsourav54.letsgo.R;
 
 import java.util.ArrayList;
 

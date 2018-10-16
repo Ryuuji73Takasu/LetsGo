@@ -7,8 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-import com.mrhsourav54.letsgo.Homepage;
+import com.mrhsourav54.letsgo.Homepage.Homepage;
 import com.mrhsourav54.letsgo.R;
+import com.mrhsourav54.letsgo.Transport.Train.TrainTickets;
 
 public class TransportRental extends AppCompatActivity {
 

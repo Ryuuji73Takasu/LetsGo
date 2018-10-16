@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".Transport.Train.ShowTicketInformation">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="#a1332011"
+        android:fontFamily="sans-serif-condensed"
+        android:text="- AC class berth.  These are air-conditioned 2-berth sleeper compartments on the best overnight trains.
+
+- AC class seat.  The best accommodation on daytime trains.  Air-conditioned, carpeted cars with reclining seats, all reserved.
+
+- Snigdha.  These are AC class air-conditioned reclining seats cars with TV screen.
+
+- 1st class berth.  1st class berths are arranged in 4-berth sleeper compartments on overnight trains.
+
+- 1st class seat, all reserved.
+
+- 2nd class Shuvon chair.  Shuvon means better looking, a second class chair car with reclining seats, all reserved.
+
+- 2nd class Shuvon.  More basic seating than shuvon chair cars, all reserved.
+
+- 2nd class Shulov.  Shulov means easily available.  These are second class cars with bench seats.  Unreserved seating, often crowded.
+"
+
+        android:textColor="#eff7ef"
+        android:textSize="17sp" />
+</RelativeLayout>

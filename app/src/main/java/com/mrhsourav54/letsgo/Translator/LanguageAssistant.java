@@ -1,4 +1,4 @@
-package com.mrhsourav54.letsgo;
+package com.mrhsourav54.letsgo.Translator;
 
 import android.annotation.TargetApi;
 import android.content.Intent;
@@ -7,17 +7,16 @@ import android.os.StrictMode;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import com.mrhsourav54.letsgo.parser.JSONparser;
+import com.mrhsourav54.letsgo.Homepage.Homepage;
+import com.mrhsourav54.letsgo.R;
+import com.mrhsourav54.letsgo.Translator.parser.JSONparser;
 
-import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 
 public class LanguageAssistant extends AppCompatActivity {
@@ -70,7 +69,7 @@ public class LanguageAssistant extends AppCompatActivity {
 
   //      tvout.setText("");
 
-        JSONparser.getDataById(in);
+      //  JSONparser.getDataById(in);
 
         out = JSONparser.getDataFromWeb();
 

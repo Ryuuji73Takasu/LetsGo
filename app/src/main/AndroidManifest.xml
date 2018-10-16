@@ -20,22 +20,24 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/YOUR_API_KEY" />
 
-        <activity android:name=".Homepage">
+        <activity android:name=".Homepage.Homepage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LanguageAssistant" />
-        <activity android:name=".Currency_conv" />
-        <activity android:name=".LoginCompany" />
-        <activity android:name=".GiveCompanyData" />
-        <activity android:name=".viewAgencyDetail" />
+        <activity android:name=".Translator.LanguageAssistant" />
+        <activity android:name=".CurrencyConverter.Currency_conv" />
+        <activity android:name=".CurrencyConverter.LoginCompany" />
+        <activity android:name=".CurrencyConverter.GiveCompanyData" />
+        <activity android:name=".CurrencyConverter.viewAgencyDetail" />
         <activity android:name=".Transport.TransportRental" />
         <activity android:name=".Transport.CarRental" />
         <activity android:name=".Transport.PlaneFare" />
-        <activity android:name=".Transport.TrainTickets"></activity>
+        <activity android:name=".Transport.Train.TrainTickets" />
+        <activity android:name=".Transport.Train.ShowTicketInformation" />
+        <activity android:name=".Transport.Train.TicketTiming"></activity>
     </application>
 
 </manifest>

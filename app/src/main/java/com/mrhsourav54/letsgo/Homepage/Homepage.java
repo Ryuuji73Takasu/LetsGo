@@ -1,23 +1,19 @@
-package com.mrhsourav54.letsgo;
+package com.mrhsourav54.letsgo.Homepage;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.res.TypedArray;
-import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.AttributeSet;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.TextView;
 import android.widget.Toast;
 
+import com.mrhsourav54.letsgo.CurrencyConverter.Currency_conv;
+import com.mrhsourav54.letsgo.R;
+import com.mrhsourav54.letsgo.Translator.LanguageAssistant;
 import com.mrhsourav54.letsgo.Transport.TransportRental;
-
-import java.util.Hashtable;
 
 
 public class Homepage extends AppCompatActivity {

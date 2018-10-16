@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/back"
     android:orientation="vertical"
-    tools:context=".Currency_conv">
+    tools:context=".CurrencyConverter.Currency_conv">
 
     <LinearLayout
         android:layout_width="match_parent"
