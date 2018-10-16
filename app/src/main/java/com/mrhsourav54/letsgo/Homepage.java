@@ -17,6 +17,7 @@ import android.widget.Button;
 public class Homepage extends AppCompatActivity {
 
     private Button btnCurrencyConverter;
+    private Button btnCompareHotels;
 
 
 
@@ -31,8 +32,16 @@ public class Homepage extends AppCompatActivity {
 
 
         btnCurrencyConverter= findViewById(R.id.currencyConverterID);
+        btnCompareHotels = findViewById(R.id.comaprehotelID);
 
 
+       btnCompareHotels.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Intent intent3= new Intent(Homepage.this,CompareHotels.class);
+               startActivity(intent3);
+           }
+       });
 
         btnCurrencyConverter.setOnClickListener(new View.OnClickListener() {
             @Override

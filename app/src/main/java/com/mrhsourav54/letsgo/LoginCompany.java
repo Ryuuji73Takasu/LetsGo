@@ -46,6 +46,8 @@ public class LoginCompany extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 signIn();
+                Intent intent = new Intent(LoginCompany.this,GiveCompanyData.class);
+                startActivity(intent);
             }
         });
 
@@ -55,8 +57,8 @@ public class LoginCompany extends AppCompatActivity {
             public void onClick(View v) {
                 createAccount();
 
-                Intent intent = new Intent(LoginCompany.this,GiveCompanyData.class);
-                startActivity(intent);
+                //Intent intent = new Intent(LoginCompany.this,GiveCompanyData.class);
+                //startActivity(intent);
             }
         });
     }
@@ -79,7 +81,7 @@ public class LoginCompany extends AppCompatActivity {
                     {
                         FirebaseUser user = mAuth.getCurrentUser();
                         //Toast.makeText(LoginCompany.this, "", Toast.LENGTH_SHORT).show();
-                        Toast.makeText(getApplicationContext(), " Create Success ", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), " Your Account Has Been Successfully Created,Log in Now", Toast.LENGTH_SHORT).show();
                     }
                     else{ Toast.makeText(LoginCompany.this, "Failed to create Account",Toast.LENGTH_SHORT).show();
                     }

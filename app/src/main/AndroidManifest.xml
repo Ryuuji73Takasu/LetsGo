@@ -19,7 +19,13 @@
         <activity android:name=".Currency_conv" />
         <activity android:name=".LoginCompany" />
         <activity android:name=".GiveCompanyData" />
-        <activity android:name=".viewAgencyDetail"></activity>
+        <activity android:name=".viewAgencyDetail" />
+        <activity android:name=".CompareHotels" />
+        <activity android:name=".radToWestin" />
+        <activity android:name=".lakeshoreToWestin" />
+        <activity android:name=".rad_to_lakeshore" />
+        <activity android:name=".rad_to_platinumSuites" />
+        <activity android:name=".radission_to_sheraton"></activity>
     </application>
 
 </manifest>

@@ -8,8 +8,11 @@
 
     <ListView
         android:id="@+id/listviewID"
-        android:layout_width="344dp"
+        android:layout_width="match_parent"
         android:layout_height="551dp"
+        android:divider="#b27272"
+        android:dividerHeight="7dp"
+        android:listSelector="#c69494"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp" />
 </LinearLayout>
