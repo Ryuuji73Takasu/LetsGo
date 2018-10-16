@@ -1,4 +1,4 @@
-package com.mrhsourav54.letsgo;
+package com.mrhsourav54.letsgo.CurrencyConverter;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +9,10 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.mrhsourav54.letsgo.R;
+
+import static java.lang.Math.round;
 
 
 public class Currency_conv extends AppCompatActivity {
@@ -68,36 +72,31 @@ public class Currency_conv extends AppCompatActivity {
                     String a = txtGiveInput.getText().toString();
                     double num = Double.parseDouble(a);
                     double ans;
-                    //tvinfo.setText("");
+                    txtViewResultsHere.setText("");
 
                     if (dollerTotaka.isChecked()) {
-                        ans = 80 * num;
-                        txtViewResultsHere.append(a + " Doller = " + ans + " Taka.\n");
+                        round(ans = 83.82 * num);
+                        txtViewResultsHere.append(a + " Dollar = " + ans + " Taka\n");
                     }
                     if (takaToDOller.isChecked()) {
-                        ans = num/80;
-                        txtViewResultsHere.append(a + " Taka =" + ans + " Doller.\n");
+                        round(ans = num/83.82);
+                        txtViewResultsHere.append(a + " Taka =" + ans + " Dollar\n");
                     }
                     if (euroToTaka.isChecked()) {
-                        ans = num*120;
-                        txtViewResultsHere.append(a + " Euro = " + ans + " Taka.\n");
+                        round(ans = num*96.75);
+                        txtViewResultsHere.append(a + " Euro = " + ans + " Taka\n");
                     }
                     if (takaToEuro.isChecked()) {
-                        ans = num/120;
-                        txtViewResultsHere.append(a + " Taka = " + ans + " Euro.\n");
+                        round(ans = num/96.75);
+                        txtViewResultsHere.append(a + " Taka = " + ans + " Euro\n");
                     }
                    
                 }
                 catch (Exception e)
                 {
-                    Toast.makeText(Currency_conv.this, "Please Enter a number at first", Toast.LENGTH_SHORT).show();
-
+                    Toast.makeText(Currency_conv.this, "Please Enter a valid number", Toast.LENGTH_SHORT).show();
                 }
-
             }
         });
-
-
-
     }
 }

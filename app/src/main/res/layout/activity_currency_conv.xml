@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/back"
     android:orientation="vertical"
-    tools:context=".Currency_conv">
+    tools:context=".CurrencyConverter.Currency_conv">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,7 +42,7 @@
         android:layout_height="50dp"
         android:orientation="horizontal"
         android:layout_marginTop="5dp"
-        android:background="#ded0d0"
+        android:background="#00ded0d0"
         >
 
         <CheckBox
@@ -51,7 +51,7 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="5mm"
             android:background="#9daabe"
-            android:text="Doller to Taka" />
+            android:text="Dollar to Taka" />
 
         <CheckBox
             android:id="@+id/takatodollerID"
@@ -59,7 +59,7 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="12mm"
             android:background="#9daabe"
-            android:text="Taka to Doller" />
+            android:text="Taka to Dollar" />
 
     </LinearLayout>
 
@@ -68,7 +68,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="5dp"
         android:orientation="horizontal"
-    android:background="#ded0d0">
+    android:background="#00ded0d0">
 
         <CheckBox
             android:id="@+id/eurototakaID"

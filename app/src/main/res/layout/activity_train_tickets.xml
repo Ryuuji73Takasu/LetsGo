@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".Transport.Train.TrainTickets">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_marginTop="195dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="To"
+        android:textSize="18dp"
+        android:textColor="#f2311202"
+        android:textStyle="bold" />
+
+    <ImageButton
+
+        android:id="@+id/homeButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:textColor="#f2311202"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+
+        app:srcCompat="@drawable/log" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/from"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+
+        android:textColor="#f2311202"
+        android:fontFamily="sans-serif-condensed"
+        android:text="From" />
+
+    <EditText
+        android:id="@+id/to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignStart="@+id/from"
+        android:layout_alignLeft="@+id/from"
+        android:ems="10"
+        android:textColor="#f2311202"
+        android:hint="Departure station" />
+
+    Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <EditText
+        android:id="@+id/from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        android:layout_marginTop="123dp"
+        android:ems="10"
+        android:textColor="#f2311202"
+        android:hint="Arrival station" />
+
+    <Button
+
+
+        android:id="@+id/viewtraininfo"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="123dp"
+        android:background="#aaba1038"
+        android:fontFamily="casual"
+        android:text="View Ticket Class Details"
+        android:textColor="@drawable/colorbutton"
+        android:textStyle="bold" />
+
+
+    <Button
+
+
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="210dp"
+        android:background="#aa8d10ba"
+        android:fontFamily="casual"
+        android:text="Confirm"
+        android:textColor="@drawable/colorbutton"
+        android:textStyle="bold" />
+
+</RelativeLayout>

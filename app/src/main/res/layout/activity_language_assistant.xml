@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".Translator.LanguageAssistant">
+
+    <ImageButton
+
+        android:id="@+id/homeButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+
+        app:srcCompat="@drawable/log" />
+
+    <EditText
+        android:id="@+id/intxt"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="147dp"
+        android:textStyle="bold"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Enter text to convert" />
+
+    <TextView
+        android:id="@+id/outtxt"
+        android:layout_width="match_parent"
+        android:layout_height="273dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Local Translation"
+        android:textStyle="bold"
+        android:textColor="#f3291a04"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/convbtn"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="227dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:background="#bbfc8428"
+        android:text="Convert"/>
+
+
+</RelativeLayout>

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/back"
-    tools:context=".GiveCompanyData">
+    tools:context=".CurrencyConverter.GiveCompanyData">
 
 
     <LinearLayout
@@ -35,7 +35,11 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="3dp"
-            android:background="#d9cece"
+            android:background="#55d9cece"
+            android:textColorHint="#f3291a04"
+            android:textColor="#f3291a04"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="left"
             android:hint="Full Name" />
     </LinearLayout>
 
@@ -50,7 +54,11 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="3dp"
-            android:background="#d9cece"
+            android:textColorHint="#f3291a04"
+            android:textColor="#f3291a04"
+            android:background="#55d9cece"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="left"
             android:hint="Company Name" />
     </LinearLayout>
 
@@ -64,7 +72,11 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="3dp"
-            android:background="#d9cece"
+            android:gravity="left"
+            android:textColorHint="#f3291a04"
+            android:textColor="#f3291a04"
+            android:fontFamily="sans-serif-condensed"
+            android:background="#55d9cece"
             android:hint="Company Registration ID" />
     </LinearLayout>
 
@@ -78,7 +90,11 @@
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_marginTop="3dp"
-            android:background="#d9cece"
+            android:background="#55d9cece"
+            android:textColorHint="#f3291a04"
+            android:textColor="#f3291a04"
+            android:gravity="left"
+            android:fontFamily="sans-serif-condensed"
             android:hint="Address" />
     </LinearLayout>
 
@@ -92,7 +108,11 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="3dp"
-            android:background="#d9cece"
+            android:background="#55d9cece"
+            android:textColorHint="#f3291a04"
+            android:textColor="#f3291a04"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="left"
             android:hint="Phone Number" />
     </LinearLayout>
 
@@ -110,6 +130,7 @@
             android:id="@+id/submitID"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="casual"
             android:text="Submit" />
     </LinearLayout>
 
