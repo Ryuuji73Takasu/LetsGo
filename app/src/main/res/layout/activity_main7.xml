@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main7Activity">
+
+    <ScrollView
+        android:id="@+id/scview5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="58dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/syl1"
+        android:layout_width="800dp"
+        android:layout_height="240dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitStart"
+
+        android:src="@drawable/richmond" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/syl1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Richmond Hotel"
+        android:textColor="#229cff"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <ImageView
+
+            android:layout_width="90dp"
+            android:layout_height="20dp"
+
+            android:scaleType="fitStart"
+
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+
+            android:src="@drawable/star" />
+        <TextView
+
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:text="7.2(Good)"
+            android:textColor="#222222"
+            android:gravity="right"
+
+            android:textSize="21sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <ImageView
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:scaleType="fitStart"
+
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+
+            android:src="@drawable/location" />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="right"
+            android:text="Al Hamra City 10th Floor, Sylhet"
+            android:textColor="#222222"
+            android:textSize="21sp"
+            />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/text12"
+        android:textSize="23sp" />
+
+    <Button
+        android:id="@+id/book_now12"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_gravity="end"
+        android:text="Book Now"
+        android:textColor="#222"
+        android:textSize="26sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="21sp" />
+
+
+        <ImageView
+            android:id="@+id/syl2"
+            android:layout_width="800dp"
+            android:layout_height="240dp"
+
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitStart"
+
+            android:src="@drawable/metro" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/syl1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Hotel Metro International"
+            android:textColor="#229cff"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+            <ImageView
+
+                android:layout_width="90dp"
+                android:layout_height="20dp"
+
+                android:scaleType="fitStart"
+
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+
+                android:src="@drawable/star" />
+            <TextView
+
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:text="7.9(Good)"
+                android:textColor="#222222"
+                android:gravity="right"
+
+                android:textSize="21sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+            <ImageView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:scaleType="fitStart"
+
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+
+                android:src="@drawable/location" />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:gravity="right"
+                android:text="Road-4,East Bondor Bazar"
+                android:textColor="#222222"
+                android:textSize="21sp"
+                />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/text13"
+            android:textSize="23sp" />
+
+        <Button
+            android:id="@+id/book_now13"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:text="Book Now"
+            android:textColor="#222"
+            android:textSize="26sp" />
+
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
